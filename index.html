@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dashboard builder over your own data | Lattice Designer demo</title>
+<meta name="description" content="Build a dashboard over orders, products and customers: drag widgets in, switch to view mode, save and load your layout. A plain JavaScript demo of the Lattice Designer.">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>Build a dashboard over your own data</h1>
+  <p class="lede">Orders, products and customers, already related. Add a widget from the left rail, drag it into place,
+    then switch to view mode to see what your readers see. Save and Load keep your layout in this browser.</p>
+  <div class="bar">
+    <button id="mode" type="button">View mode</button>
+    <button id="save" type="button">Save</button>
+    <button id="load" type="button">Load</button>
+    <span id="note" role="status" aria-live="polite"></span>
+  </div>
+</header>
+<main><div id="designer"></div></main>
+<footer>
+  <p>Built with the <a href="https://www.latticegrid.dev/designer/">Lattice Designer</a>. Data is generated sample data.
+    <a href="https://github.com/toclocoinc/lattice-grid-demo-designer">Source</a>.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
