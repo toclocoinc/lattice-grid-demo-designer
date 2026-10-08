@@ -1,8 +1,8 @@
 import { customers, products, orders } from './data.js';
 
 // The grid comes from the published package. Add ?local=1 to use the copy in ./vendor instead.
-const STAMP = '20261008a';
-const BASE = new URLSearchParams(location.search).has('local') ? './vendor' : 'https://cdn.jsdelivr.net/npm/@toclocoinc/lattice-grid@1.89.0';
+const STAMP = '20261008b';
+const BASE = new URLSearchParams(location.search).has('local') ? './vendor' : 'https://cdn.jsdelivr.net/npm/@toclocoinc/lattice-grid@1.90.0';
 const load = (path) => import(`${BASE}/${path}?v=${STAMP}`);
 document.head.append(Object.assign(document.createElement('link'), { rel: 'stylesheet', href: `${BASE}/lattice-grid.min.css?v=${STAMP}` }));
 
